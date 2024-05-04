@@ -9,40 +9,46 @@
 </head>
 <body>
   <!-- NAVBAR -->
-  <nav class="container mx-auto p-5">
-    <div class="flex justify-between items-center">
-      <div class="flex justify-center items-center">
-        <!-- logo -->
-        <img src="" alt="">
-        <h1 class="font-semibold text-2xl text-green-500">Rhudy Toner</h1>
-      </div>
-      <ul class="flex gap-8 items-center font-semibold">
-        <li class="hover:text-green-500"><a href="#">Beranda</a></li>
-        <li class="hover:text-green-500"><a href="#melayani">Melayani</a></li>
-        <li class="hover:text-green-500"><a href="#lokasi">Lokasi</a></li>
+<nav class="bg-white border-gray-200 dark:bg-blue-900">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Rhudy Toner</span>
+    </a>
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-purple-400 dark:hover:bg-purple-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-blue-800 md:dark:bg-blue-900 ">
+        <li>
+          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Beranda</a>
+        </li>
+        <li>
+          <a href="#melayani" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Melayani</a>
+        </li>
+        <li>
+          <a href="#lokasi" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Lokasi</a>
+        </li>
+        
       </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Hero Section -->
   <section>
-    <div class="container mx-auto">
-      <img class="w-full h-[750px] rounded-md mt-5" src="assets/bg.jpeg" alt="bg" />
-      <div class="text-white p-10 -mt-96 md:-mt-80 lg:-mt-64">
-        <h1 class="text-7xl font-bold">Jual Beli Cartidge Bekas</h1>
-        <p class="my-4 text-2xl">Reffil Tinta dan Toner</p>
-        <button class="bg-orange-500 rounded-xl py-2 px-8 hover:bg-orange-700">
-          <a class="font-semibold" href="#melayani">Toko Saya</a>
-        </button>
-      </div>
-    </div>
-  </section>
+    <figure class="max-w-lg"></figure>
+<img class="h-auto max-w-full" src="/assets/21.png" alt="image description">
 
+    
+  </section>
   <!-- products -->
   <section id="melayani">
     <div class="mt-10 h-auto container mx-auto">
       <div class="text-center font-semibold mt-5">
-        <h1 class="text-6xl">Melayani</h1>
+        <h1 class="text-5xl">Melayani</h1>
         <p class="text-base text-slate-500 p-5"></p>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-5 gap-2 items-center mb-20">
@@ -181,13 +187,13 @@
   <section id="lokasi">
     <div class="mt-5 h-auto container mx-auto">
       <div class="text-center font-semibold mt-5">
-        <h1 class="text-6xl">Lokasi</h1>
+        <h1 class="text-6xl">Video Tutorial</h1>
         <p class="text-base text-slate-500 p-5"></p>
       </div>
-      <div class="flex gap-3 justify-center items-center mb-20">
-        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.8941197177669!2d106.55854742079566!3d-6.2233339322368035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fe74dec25d73%3A0x6f482fd42fba2d49!2sRhudy%20Toner%20Refill%20Center!5e0!3m2!1sid!2sid!4v1714357829008!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-        </div>
-      </div>
+      <video class="w-full h-auto max-w-full" controls>
+        <source src="assets/Cartridge Hp 678 untuk printer apa -.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
   </section>
   
 
