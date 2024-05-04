@@ -1,251 +1,326 @@
 <!DOCTYPE html>
 <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rhudy Toner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rhudy Toner</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+      .font-family-karla {
+        font-family: karla;
+      }
+    </style>
+
+    <!-- AlpineJS -->
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
+      crossorigin="anonymous"
+    ></script>
+  </head>
   <!-- NAVBAR -->
-<nav class="bg-white border-gray-200 dark:bg-blue-900">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Rhudy Toner</span>
-    </a>
-    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-purple-400 dark:hover:bg-purple-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-blue-800 md:dark:bg-blue-900 ">
-        <li>
-          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Beranda</a>
-        </li>
-        <li>
-          <a href="#melayani" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Melayani</a>
-        </li>
-        <li>
-          <a href="#lokasi" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Lokasi</a>
-        </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
+  <body class="bg-white font-family-karla">
+    <!-- Top Bar Nav -->
+    <nav class="w-full py-4 bg-yellow-800 shadow">
+      <div
+        class="w-full container mx-auto flex flex-wrap items-center justify-between"
+      >
+        <nav>
+          <ul
+            class="flex items-center justify-between font-bold text-sm text-white uppercase no-underline"
+          >
+            <li>
+              <a class="hover:text-gray-200 hover:underline px-4" href="#"
+                >Toko Shopee</a
+              >
+            </li>
+            </li>
+          </ul>
+        </nav>
 
-
-  <!-- Hero Section -->
-  <section>
-    <figure class="max-w-lg"></figure>
-<img class="h-auto max-w-full" src="/assets/21.png" alt="image description">
-
-    
-  </section>
-  <!-- products -->
-  <section id="melayani">
-    <div class="mt-10 h-auto container mx-auto">
-      <div class="text-center font-semibold mt-5">
-        <h1 class="text-5xl">Melayani</h1>
-        <p class="text-base text-slate-500 p-5"></p>
+        <div class="flex items-center text-lg no-underline text-white pr-6">
+          <a class="" href="https://www.facebook.com/rudy.piliang1">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a class="pl-6" href="https://www.instagram.com/musrudy50/">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="pl-6" href="https://www.youtube.com/@MusrudyChannel">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-5 gap-2 items-center mb-20">
-        <!-- products 1 -->
-        <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
-          <img class="w-full"
-            src="assets/ruuddy.jpg"
-            alt="Printer MP">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Service Printer Bitung</div>
-            <p class="text-gray-500 text-sm">
-              Kami menerima service printer Tangerang & Sekitarnya 
-            </p>
-          </div>
-          <div class="px-6 pb-3">
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
-              class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800">Hubungi Saya</button></a>
-            
-          </div>
-        </div>
-        <!-- products 1 -->
-        <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
-          <img class="w-full"
-            src="assets/rrdd2.jpg"
-            alt="Sunset in the mountains">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Isi Ulang Toner Tangerang </div>
-            <p class="text-gray-500 text-sm">
-              Kami juga Terima jasa isi ulang tinta  toner printer dan service printer 
-            </p>
-          </div>
-          <div class="px-6 pb-3">
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
-                class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800">Hubungi Saya</button></a>
-          </div>
-        </div>
-        <!-- products 1 -->
-        <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
-          <img class="w-full"
-            src="assets/rudy12.jpg"
-            alt="Sunset in the mountains">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Tinta Reffil</div>
-            <p class="text-gray-500 text-sm">
-             Kami menjual tinta dan menerima isi ulang tinta Cartidge
-            </p>
-          </div>
-          <div class="px-6 pb-3">
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
-                class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800">Hubungi Saya</button></a>
-          </div>
-        </div>
-        <!-- products 1 -->
-        <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
-          <img class="w-full"
-            src="assets/11rudy'.jpg"
-            alt="Sunset in the mountains">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Jual Toner Compatible</div>
-            <p class="text-gray-500 text-sm">
-             Kami menjual juga Toner Compatible seperti 85A,35A Dll
-            </p>
-          </div>
-          <div class="px-6 pb-3">
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
-                class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800">Hubungi Saya</button></a>
-          </div>
-        </div>
-        <!-- products 1 -->
-        <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
-          <img class="w-full"
-            src="assets/ruuddy.jpg"
-            alt="Sunset in the mountains">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Service Printer terdekat curug</div>
-            <p class="text-gray-500 text-sm">
-              Melayani service printer Epson HP Canon
-            </p>
-          </div>
-          <div class="px-6 pb-3">
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
-                class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800">Hubungi Saya</button></a>
-          </div>
-        </div>
-        <!-- products 1 -->
-        <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
-          <img class="w-full"
-            src="assets/rudy12.jpg"
-            alt="Sunset in the mountains">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Tempat jual tinta bekas tangerang</div>
-            <p class="text-gray-500 text-sm">
-              Melayani jual tinta bekas 
-            </p>
-          </div>
-          <div class="px-6 pb-3">
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
-                class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800">Hubungi Saya</button></a>
-          </div>
-        </div>
-        <!-- products 1 -->
-        <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
-          <img class="w-full"
-            src="assets/rrdd2.jpg"
-            alt="Sunset in the mountains">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Jual beli catridge bekas tangerang</div>
-            <p class="text-gray-500 text-sm">
-              Melayani jual beli catridge
-            </p>
-          </div>
-          <div class="px-6 pb-3">
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
-                class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800">Hubungi Saya</button></a>
-          </div>
-        </div>
-        <!-- products 1 -->
-        <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
-          <img class="w-full"
-            src="assets/11rudy'.jpg"
-            alt="Sunset in the mountains">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Isi Ulang Tinta Printer Bitung</div>
-            <p class="text-gray-500 text-sm">
-              Menerima isi ulang sekitar Tangerang
-            </p>
-          </div>
-          <div class="px-6 pb-3">
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
-                class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800"> Hubungi Saya</button></a>
-          </div>
-        </div>
-  </section>
-
-  <!-- content youtube -->
-  <section id="lokasi">
-    <div class="mt-5 h-auto container mx-auto">
-      <div class="text-center font-semibold mt-5">
-        <h1 class="text-6xl">Video Tutorial</h1>
-        <p class="text-base text-slate-500 p-5"></p>
+    </nav>
+    <header class="w-full container mx-auto">
+      <div class="flex flex-col items-center py-12">
+        <a
+          class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl"
+          href="#"
+        >
+          Rhudy Toner
+        </a>
+        <p class="text-lg text-gray-600">Jual Beli Cartidge Bekas Tangerang</p>
       </div>
-      <video class="w-full h-auto max-w-full" controls>
-        <source src="assets/Cartridge Hp 678 untuk printer apa -.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-  </section>
-  
+    </header>
 
-  <!-- footer -->
-  <footer
-  class="flex flex-col items-center bg-neutral-200 text-center text-white ">
-  <div class="container pt-9">
-    <div class="mb-9 flex justify-center">
-      <!-- tambahkan disini fb -->
-      <a href="https://www.facebook.com/rudy.piliang1" class="mr-9 text-neutral-800">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4 w-4"
-          fill="currentColor"
-          viewBox="0 0 24 24">
-          <path
-            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-        </svg>
-      </a>
-      <!-- tambahkan disini shoppe-->
-      <a href="https://shopee.co.id/musrudy" class="mr-9 text-neutral-800">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
-          <path d="M 24 1 C 19.015304 1 15.187203 5.491076 14.589844 11 L 5.5917969 11 A 1.50015 1.50015 0 0 0 4.09375 12.587891 L 5.7773438 41.234375 A 1.50015 1.50015 0 0 0 5.7773438 41.236328 C 5.901433 43.336252 7.6680925 45 9.7714844 45 L 38.228516 45 C 40.332664 45 42.096549 43.335805 42.220703 41.236328 A 1.50015 1.50015 0 0 0 42.220703 41.234375 L 43.90625 12.587891 A 1.50015 1.50015 0 0 0 42.408203 11 L 33.410156 11 C 32.812797 5.491076 28.984696 1 24 1 z M 24 4 C 27.044271 4 29.834574 6.9017187 30.392578 11 L 17.607422 11 C 18.165426 6.9017187 20.955729 4 24 4 z M 7.1816406 14 L 40.818359 14 L 39.226562 41.058594 C 39.194717 41.597117 38.768367 42 38.228516 42 L 9.7714844 42 C 9.2308762 42 8.8033952 41.598623 8.7714844 41.058594 L 7.1816406 14 z M 24.074219 17.011719 C 20.135219 17.011719 17.164063 19.515937 17.164062 22.835938 C 17.164062 26.625937 20.635828 27.892109 23.423828 28.912109 C 26.744828 30.126109 28.308594 30.929062 28.308594 33.039062 C 28.308594 34.694063 26.349453 36.041016 23.939453 36.041016 C 21.113453 36.041016 18.640234 33.938969 18.615234 33.917969 L 18.490234 33.802734 C 18.397234 33.717734 18.277344 33.671875 18.152344 33.671875 C 18.133344 33.671875 18.11375 33.671828 18.09375 33.673828 C 17.94975 33.690828 17.819281 33.770625 17.738281 33.890625 L 16.632812 35.519531 C 16.487813 35.733531 16.529469 36.0235 16.730469 36.1875 L 16.84375 36.279297 C 17.62975 36.916297 20.4575 38.988281 23.9375 38.988281 C 28.0415 38.988281 31.257813 36.376062 31.257812 33.039062 C 31.259813 28.637063 27.477453 27.254531 24.439453 26.144531 C 21.498453 25.069531 20.113281 24.392938 20.113281 22.835938 C 20.113281 21.169937 21.778219 19.960938 24.074219 19.960938 C 25.743219 19.960938 27.216312 20.620672 27.945312 21.013672 C 28.062313 21.076672 28.414281 21.287875 28.613281 21.421875 L 28.751953 21.513672 C 28.834953 21.569672 28.931297 21.597656 29.029297 21.597656 C 29.065297 21.597656 29.100719 21.594891 29.136719 21.587891 C 29.269719 21.558891 29.384078 21.475375 29.455078 21.359375 L 30.466797 19.714844 C 30.608797 19.484844 30.540453 19.181203 30.314453 19.033203 L 30.148438 18.925781 C 29.299437 18.353781 26.997219 17.011719 24.074219 17.011719 z"></path>
-          </svg>
-        
-      </a>
-      <!-- tambahkan disini ig -->
-      <a href="https://www.instagram.com/musrudy50/" class="mr-9 text-neutral-800">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4 w-4"
-          fill="currentColor"
-          viewBox="0 0 24 24">
-          <path
-            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-        </svg>
-      </a>
-    </div>
-  </div>
-
-  <!--Copyright section-->
-  <div
-    class="w-full bg-neutral-300 p-4 text-center text-neutral-700">
-    © 2024 Copyright:
-    <a
-      class="text-neutral-800"
-      href="https://shopee.co.id/musrudy"
-      >RD Toner</a
+    <!-- Topic Nav -->
+    <nav
+      class="w-full py-4 border-t border-b bg-gray-100"
+      x-data="{ open: false }"
     >
-  </div>
-</footer>
+      <div class="block sm:hidden">
+        <a
+          href="#"
+          class="block md:hidden text-base font-bold uppercase text-center flex justify-center items-center"
+          @click="open = !open"
+        >
+          Topics
+          <i
+            :class="open ? 'fa-chevron-down': 'fa-chevron-up'"
+            class="fas ml-2"
+          ></i>
+        </a>
+      </div>
+      <div
+        :class="open ? 'block': 'hidden'"
+        class="w-full flex-grow sm:flex sm:items-center sm:w-auto"
+      >
+        <div
+          class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2"
+        >
+          <a href="#melayani" class="hover:bg-gray-400 rounded py-2 px-4 mx-2"
+            >Jual Beli Catridge Bekas</a
+          >
+          <a href="#melayani" class="hover:bg-gray-400 rounded py-2 px-4 mx-2"
+            >Isi Ulang Tinta Toner</a
+          >
+          <a href="#melayani" class="hover:bg-gray-400 rounded py-2 px-4 mx-2"
+            >Service Printer</a
+          >
+        </div>
+      </div>
+    </nav>
 
-</body>
+    <!-- Hero Section -->
+    <div class="container mx-auto flex flex-wrap py-6">
+      <!-- Posts Section -->
+      <section class="w-full md:w-2/3 flex flex-col items-center px-3">
+        <article class="flex flex-col shadow my-4">
+          <!-- Article Image -->
+          <a href="#" class="hover:opacity-75">
+            <img
+              src="assets/21.png"
+            />
+          </a>
+          <div class="bg-white flex flex-col justify-start p-6">
+            <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4"
+              >Cartidge</a
+            >
+            <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4"
+              >Jual Beli Cartridge Bekas Cikupa Bitung Tangerang
+              </a
+            >
+            <p href="#" class="text-sm pb-3">
+              By
+              <a href="#" class="font-semibold hover:text-gray-800"
+                >Musrudy</a
+              >, Published On  04 Mei 2024
+            </p>
+            <a href="#" class="pb-6"
+              >Jual Beli Cartridge Bekas Cikupa Bitung Tangerang
 
+              Kami terima Jual Beli Cartridge Bekas Cikupa Bitung Tangerang dengan harga tinggi
+              
+              type 680,682,704,703,810,811,740,741,745,746 dll..</a
+            >
+            <a href="https://maps.app.goo.gl/fLcoywQdkdiCS8JX7" class="uppercase text-gray-800 hover:text-black"
+              >Lokasi Saya <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+        <div class="flex items-center py-8">
+        </div>
+      </section>
+      <aside class="w-full md:w-1/3 flex flex-col items-center px-3">
+        <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+          <p class="text-xl font-semibold pb-5">Tentang Saya</p>
+          <p class="pb-2">
+            Tempat service printer terdekat Bitung Curug Tangerang Kami terima service printer,isi ulang tinta toner,dan jual cartridge dan tinta alamat : Toko rhudy toner jalan raya serang km 10,5 turunan pertamina Pos Bitung Tangerang tlp 085216206903
+          </p>
+          <a
+            href="https://api.whatsapp.com/send?phone=6285216206903"
+            class="w-full bg-green-500 text-white font-bold text-sm uppercase rounded hover:bg-green-800 flex items-center justify-center px-2 py-3 mt-4"
+          >
+            Whatsapp Kami !
+          </a>
+        </div>
+      </aside>
+    </section>
+    <!-- products -->
+    <section id="melayani">
+      <div class="mt-10 h-auto container mx-auto">
+        <div class="text-center font-semibold mt-5">
+          <h1 class="text-5xl">Kami Melayani</h1>
+          <p class="text-base text-slate-500 p-5"></p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-5 gap-2 items-center mb-20">
+          <!-- products 1 -->
+          <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
+            <img class="w-full"
+              src="assets/ruuddy.jpg"
+              alt="Printer MP">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Service Printer Bitung</div>
+              <p class="text-gray-500 text-sm">
+                Kami menerima service printer Tangerang & Sekitarnya 
+              </p>
+            </div>
+            <div class="px-6 pb-3">
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
+                class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800">Hubungi Saya</button></a>
+              
+            </div>
+          </div>
+          <!-- products 1 -->
+          <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
+            <img class="w-full"
+              src="assets/11rudy'.jpg"
+              alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Isi Ulang Tinta Toner </div>
+              <p class="text-gray-500 text-sm">
+                Kami juga Terima jasa isi ulang tinta toner printer dan service printer 
+              </p>
+            </div>
+            <div class="px-6 pb-3">
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
+                  class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800">Hubungi Saya</button></a>
+            </div>
+          </div>
+          <!-- products 1 -->
+          <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
+            <img class="w-full"
+              src="assets/jirlah.png"
+              alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Tinta Reffil</div>
+              <p class="text-gray-500 text-sm">
+               Kami menjual tinta dan menerima isi ulang tinta Cartidge
+              </p>
+            </div>
+            <div class="px-6 pb-3">
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
+                  class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800">Hubungi Saya</button></a>
+            </div>
+          </div>
+          <!-- products 1 -->
+          <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
+            <img class="w-full"
+              src="assets/jual toner.png"
+              alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Jual Toner Compatible</div>
+              <p class="text-gray-500 text-sm">
+               Kami menjual juga Toner Compatible seperti 85A,35A Dll
+              </p>
+            </div>
+            <div class="px-6 pb-3">
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
+                  class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800">Hubungi Saya</button></a>
+            </div>
+          </div>
+          <!-- products 1 -->
+          <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
+            <img class="w-full"
+              src="assets/printer.png"
+              alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Service Printer terdekat curug</div>
+              <p class="text-gray-500 text-sm">
+                Melayani service printer Epson HP Canon
+              </p>
+            </div>
+            <div class="px-6 pb-3">
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
+                  class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800">Hubungi Saya</button></a>
+            </div>
+          </div>
+          <!-- products 1 -->
+          <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
+            <img class="w-full"
+              src="assets/rudy12.jpg"
+              alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Tempat jual tinta bekas tangerang</div>
+              <p class="text-gray-500 text-sm">
+                Melayani jual tinta bekas 
+              </p>
+            </div>
+            <div class="px-6 pb-3">
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
+                  class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800">Hubungi Saya</button></a>
+            </div>
+          </div>
+          <!-- products 1 -->
+          <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
+            <img class="w-full"
+              src="assets/catridge.png"
+              alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Jual beli catridge bekas tangerang</div>
+              <p class="text-gray-500 text-sm">
+                Melayani jual beli catridge
+              </p>
+            </div>
+            <div class="px-6 pb-3">
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
+                  class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800">Hubungi Saya</button></a>
+            </div>
+          </div>
+          <!-- products 1 -->
+          <div class="max-w-xs h-[450px] lg:h-[500px] rounded overflow-hidden shadow-lg mt-5">
+            <img class="w-full"
+              src="assets/rrdd2.jpg"
+              alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Isi Ulang Tinta Printer Bitung</div>
+              <p class="text-gray-500 text-sm">
+                Menerima isi ulang sekitar Tangerang
+              </p>
+            </div>
+            <div class="px-6 pb-3">
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=6285216206903"><button
+                  class="bg-green-500 p-2 rounded-lg text-xs text-white font-semibold hover:bg-green-800"> Hubungi Saya</button></a>
+            </div>
+          </div>
+    </section>
+  
+    <!-- content youtube -->
+    <section id="lokasi">
+      <div class="mt-5 h-auto container mx-auto">
+        <div class="text-center font-semibold mt-5">
+          <h1 class="text-6xl">Video Tutorial</h1>
+          <p class="text-base text-slate-500 p-5"></p>
+        </div>
+        <video class="w-full h-auto max-w-full" controls>
+          <source src="assets/Test manual Tanpa komputer Printer Hp1566.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </section>
+    </div>
+  </body>
 </html>
+
+<div class="w-full container mx-auto flex flex-col items-center">
+  <div class="uppercase pb-6">&copy; Rhudy Toner</div>
+</div>
+ =
+
+</footer>
